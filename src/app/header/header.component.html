@@ -1,0 +1,25 @@
+<div class="header">
+  <div class="headline">
+    <h1>{{ msg }}</h1>
+  </div>
+  <div class="header_interactions">
+    <button [disabled]="!showPreviousButton" (click)="onPreviousClick()"
+      >previous page</button
+    >
+    <span> Current page: {{ page }} </span>
+    <label>
+      Images per Page:
+      <input
+        (change)="onChange($event)"
+        type="number"
+        value="30"
+        min="1"
+        max="100"
+      />
+      <button>Submit</button>
+    </label>
+    <button [disabled]="!showNextButton" (click)="onNextClick()"
+      >next page</button
+    >
+  </div>
+</div>

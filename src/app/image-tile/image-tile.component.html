@@ -1,0 +1,9 @@
+<div class="tile">
+  <a href="{{image.url}}" target="_blank" (click)="doStuff($event)">
+    <img src="{{image.src}}" alt="`An image by ${image.author}`" />
+  </a>
+  <div class="info">
+    <span class="author">{{ image.author }}</span>
+    <span>#{{ image.id }}</span>
+  </div>
+</div>
